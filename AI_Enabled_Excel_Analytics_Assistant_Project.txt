@@ -9,8 +9,6 @@ Project Approach
 Upon file upload, the assistant processes the Excel file using the pandas library, structuring the data into a format compatible with the AI model. The contents are converted to a readable text format that is fed to the generative model.
 2. Query Processing and Response Generation:
 After the data is loaded, the system allows users to input questions, which are then combined with the data context and sent to the AI model. The model interprets and responds to the user’s questions based on the data, delivering an intuitive answer.
-
-
 3. Streamlit-based User Interface:
 Through Streamlit, the application provides an easy-to-navigate interface for file uploads, question submissions, and viewing AI-generated responses, creating an accessible and responsive user experience.
 
@@ -18,10 +16,6 @@ Challenges Encountered
 
 1. Handling Large Files:
 Managing large datasets efficiently proved challenging as it impacted processing speed. Performance optimizations were implemented to enable smooth operation with larger files.
-
-
-
-
 2. Contextual Understanding:
 Accurately interpreting complex or vague questions was challenging, and adjustments to prompt wording and model settings were required to improve answer relevance.
 3. API Constraints:
@@ -31,13 +25,13 @@ Ensuring smooth user interactions, especially with large files, necessitated foc
 
 Technologies Employed
 
-• Google Generative AI: 
+1. Google Generative AI: 
 Provides the main intelligence for understanding and answering questions based on the file data.
-• Pandas: 
+2.Pandas: 
 Essential for loading, processing, and transforming Excel data files into a format compatible with the AI model.
-• Streamlit: 
+3.Streamlit: 
 Powers the application interface, creating a seamless experience for file upload, question input, and answer retrieval.
-• Error Management and Time Handling: 
+4.Error Management and Time Handling: 
 Utilized to manage potential issues like API timeouts and data processing errors, ensuring robust system performance.
 
 Conclusion
